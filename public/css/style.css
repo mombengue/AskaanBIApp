@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+input, button{
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    border: 2px solid #337180;
+    padding: 15px 5px;
+    outline: none;
+    border-radius: 10px;
+}
+input::placeholder{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+button{
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.fw{
+    font-weight: 600;
+}
+.shadow{
+    box-shadow: 0px 0px 5px 0px #337180;
+}
+.bleu{
+    color: #a3d5e0;
+}
+.bleu-fonce{
+    color: #337180;
+}
+.bleu-clair{
+    color: #f3faff;
+}
+.rouge{
+    color: #ca0707;
+}
+.orange{
+    color: #9c6e39;
+}
+.vert{
+    color: #399c49;
+}
+.blanc{
+    color: #fff;
+}
+.noir{
+    color: #000;
+}
+.bg-bleu{
+    background-color: #a3d5e0;
+}
+.bg-bleu-fonce{
+    background-color: #337180;
+}
+.bg-rouge{
+    background-color: #ca0707;
+}
+.bg-orange{
+    background-color: #9c6e39;
+}
+.bg-vert{
+    background-color: #399c49;
+}
+.bg-blanc{
+    background-color: #fff;
+}
+.bg-noir{
+    background-color: #000;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mr-25{
+    margin-right: 25px;
+}
+.ml-25{
+    margin-left: 25px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mr-50{
+    margin-right: 50px;
+}
+.ml-50{
+    margin-left: 50px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.mr-100{
+    margin-right: 100px;
+}
+.ml-100{
+    margin-left: 100px;
+}
+
+
+/* Dashboard */
+.top-app{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.top-app .app-name{
+    margin-left: 40px;
+}
+.top-app .app-name h1,
+.top-app .user-name h1{
+    font-size: 24px;
+}
+.top-app .app-user{
+    position: relative;
+}
+.top-app .app-user .user-down{
+    position: absolute;
+    top: 7vh;
+    right: 40px;
+    width: 200px;
+    z-index: 50;
+    border: 2px solid #337180;
+    background: #fff;
+}
+.top-app .app-user .remove-drop{
+    display: none;
+}
+.top-app .app-user .user-down .down-item{
+    text-align: center;
+}
+.top-app .app-user .user-down .down-item:hover a{
+    color: #337180;
+}
+.top-app .app-user .img-user{
+    margin-right: 40px;
+    cursor: pointer;
+}
+.top-app .app-user .img-user img{
+    height: 40px;
+    width: 40px;
+}
+.left-app{
+    position: fixed;
+    top: 8vh;
+    left: 0%;
+    width: 16%;
+    height: 100vh;
+}
+.left-app ul{
+    flex-direction: column;
+    margin-top: 40px;
+}
+.left-app ul li{
+    margin: 20px 0px;
+    padding: 20px 30px;
+}
+.left-app ul li.active,
+.left-app ul li:hover{
+    background: #a3d5e0;
+    color: #000;
+}
+.left-app ul li.active a,
+.left-app ul li:hover a{
+    color: #000;
+}
+.left-app ul li a{
+    font-size: 18px;
+    color: #fff;
+}
+.right-app{
+    width: 100%;
+}
+.right-app .container{
+    margin-top: 10vh;
+    margin-right: 20px;
+    margin-left: 17%;
+    background: red;
+}
+
+/* login */
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(182, 181, 181);
+}
+.login-banque,
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+.login-banque{
+    margin-bottom: 0px;
+}
+.login-form{
+    margin-top: 30px;
+}
+.login-banque img{
+    width: 100px;
+    height: 100px;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-button,
+.form-input,
+.error{
+    width: 100%;
+}
+.error-message{
+    padding: 10px 20px;
+}
