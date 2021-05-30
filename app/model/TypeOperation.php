@@ -3,12 +3,11 @@
 /**
  * class user
  */
-class Role
+class TypeOperation
 {
 
-  private $idRole;
+  private $idTypeOperation;
   private $libellet;
-  private $idUser;
 
   function __construct(array $donnees) {
     $this->hydrate($donnees);
@@ -33,33 +32,23 @@ class Role
   }
 
   // getters
-  public function idRole() { 
-    return $this->idRole; 
+  public function idTypeOperation() { 
+    return $this->idTypeOperation; 
   }
   public function libellet() { 
     return $this->libellet; 
   }
-  public function idUser() { 
-    return $this->idUser; 
-  }
 
   // setters
-  public function setIdRole($idRole) {
-    $idRole = (int) $idRole;
-    if ($idRole > 0)
+  public function setIdTypeOperation($idTypeOperation) {
+    $idTypeOperation = (int) $idTypeOperation;
+    if ($idTypeOperation > 0)
     {
-      $this->idRole = $idRole;
+      $this->idTypeOperation = $idTypeOperation;
     }
   }
   public function setLibellet($libellet) {
     $libellet = (string) $libellet;
     $this->libellet = $libellet;
-  }
-  public function setIdUser($idUser) {
-    $idUser = (int) $idUser;
-    if ($idUser > 0)
-    {
-      $this->idUser = $idUser;
-    }
   }
 }

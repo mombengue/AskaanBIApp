@@ -6,9 +6,8 @@
 class Role
 {
 
-  private $idRole;
-  private $libellet;
-  private $idUser;
+  private $idClient;
+  private $idPersonne;
 
   function __construct(array $donnees) {
     $this->hydrate($donnees);
@@ -33,33 +32,26 @@ class Role
   }
 
   // getters
-  public function idRole() { 
-    return $this->idRole; 
+  public function idClient() { 
+    return $this->idClient; 
   }
-  public function libellet() { 
-    return $this->libellet; 
-  }
-  public function idUser() { 
-    return $this->idUser; 
+  public function idPersonne() { 
+    return $this->idPersonne; 
   }
 
   // setters
-  public function setIdRole($idRole) {
-    $idRole = (int) $idRole;
-    if ($idRole > 0)
+  public function setIdClient($idClient) {
+    $idClient = (int) $idClient;
+    if ($idClient > 0)
     {
-      $this->idRole = $idRole;
+      $this->idClient = $idClient;
     }
   }
-  public function setLibellet($libellet) {
-    $libellet = (string) $libellet;
-    $this->libellet = $libellet;
-  }
-  public function setIdUser($idUser) {
-    $idUser = (int) $idUser;
-    if ($idUser > 0)
+  public function setIdPersonne($idPersonne) {
+    $idPersonne = (int) $idPersonne;
+    if ($idPersonne > 0)
     {
-      $this->idUser = $idUser;
+      $this->idPersonne = $idPersonne;
     }
   }
 }

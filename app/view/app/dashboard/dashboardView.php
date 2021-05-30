@@ -6,7 +6,7 @@
     <div class="app">
         <div class="top-app bg-bleu">
             <div class="app-name">
-                <h1 class="blanc">Askann Bi</h1>
+                <h1 class="blanc">Askann Bii Banque</h1>
             </div>
             <div class="user-name">
             </div>
