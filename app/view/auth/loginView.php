@@ -20,8 +20,8 @@
                     </div>
                 <?php unset($_SESSION['flash']); } ?>
                 <div class="form-input mb-25">
-                    <label for="email" class="mb-10">Adresse Email</label>
-                    <input type="email" name="email" id="email" placeholder="Entrez votre adresse email" required>
+                    <label for="login" class="mb-10">Nom d'utilisateur</label>
+                    <input type="text" name="login" id="login" placeholder="Entrez votre login" required>
                 </div>
                 <div class="form-input mb-50">
                     <label for="password" class="mb-10">Mot de passe</label>

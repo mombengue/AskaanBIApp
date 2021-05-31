@@ -8,7 +8,7 @@ Abstract class Database
 
   protected $db;
   private $db_host      = "localhost";
-  private $db_name      = "askaan-bi-bank-g5";
+  private $db_name      = "askaan_db";
   private $db_login     = "root";
   private $db_password  = "";
 

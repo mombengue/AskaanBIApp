@@ -6,17 +6,11 @@
 class Role
 {
 
-  private $id;
-  private $name;
+  private $idRole;
+  private $libellet;
+  private $idUser;
 
   function __construct(array $donnees) {
-    $this->hydrate($donnees);
-  }
-
-  /**
-   * function hydrate
-   */
-  private function hydrate(array $donnees) {
     foreach ($donnees as $key => $value)
     {
       // On récupère le nom du setter correspondant à l'attribut.
@@ -32,23 +26,33 @@ class Role
   }
 
   // getters
-  public function id() { 
-    return $this->id; 
+  public function idRole() { 
+    return $this->idRole; 
   }
-  public function name() { 
-    return $this->name; 
+  public function libellet() { 
+    return $this->libellet; 
+  }
+  public function idUser() { 
+    return $this->idUser; 
   }
 
   // setters
-  public function setId($id) {
-    $id = (int) $id;
-    if ($id > 0)
+  public function setIdRole($idRole) {
+    $idRole = (int) $idRole;
+    if ($idRole > 0)
     {
-      $this->id = $id;
+      $this->idRole = $idRole;
     }
   }
-  public function setName($name) {
-    $name = (string) $name;
-    $this->name = $name;
+  public function setLibellet($libellet) {
+    $libellet = (string) $libellet;
+    $this->libellet = $libellet;
+  }
+  public function setIdUser($idUser) {
+    $idUser = (int) $idUser;
+    if ($idUser > 0)
+    {
+      $this->idUser = $idUser;
+    }
   }
 }

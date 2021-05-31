@@ -32,8 +32,7 @@ input::placeholder{
     font-size: 16px;
     color: rgba(0, 0, 0, 0.7);
 }
-button,
-.btn{
+button{
     font-size: 16px;
     padding: 15px 30px;
     border: none;
@@ -41,31 +40,11 @@ button,
     cursor: pointer;
     border-radius: 10px;
 }
-table{
-    border-collapse: collapse;
-    width: 100%;
-}
-thead{
-    background: #a3d5e0;
-}
-tbody{
-    background: #fff;
-}
-th{
-    padding: 20px 0px;
-    text-align: center;
-    border: 1px solid #000;
-}
-td{
-    padding: 20px 0px;
-    text-align: center;
-    border: 1px solid #000;
-}
 .fw{
     font-weight: 600;
 }
 .shadow{
-    box-shadow: 0px 0px 10px 0px rgb(182, 181, 181);
+    box-shadow: 0px 0px 5px 0px #337180;
 }
 .bleu{
     color: #a3d5e0;
@@ -80,10 +59,10 @@ td{
     color: #ca0707;
 }
 .orange{
-    color: #e77408;
+    color: #9c6e39;
 }
 .vert{
-    color: #08cf2a;
+    color: #399c49;
 }
 .blanc{
     color: #fff;
@@ -111,9 +90,6 @@ td{
 }
 .bg-noir{
     background-color: #000;
-}
-.bg-gris{
-    background-color: #f3f1f1;
 }
 .mt-10{
     margin-top: 10px;
@@ -163,6 +139,9 @@ td{
 .ml-100{
     margin-left: 100px;
 }
+
+
+/* Dashboard */
 .top-app{
     position: fixed;
     top: 0%;
@@ -242,40 +221,13 @@ td{
     width: 100%;
 }
 .right-app .container{
-    margin-top: 15vh;
-    margin-right: 40px;
-    margin-left: 18%;
+    margin-top: 10vh;
+    margin-right: 20px;
+    margin-left: 17%;
+    background: red;
 }
-.right-app .container .data{
-    display: flex;
-    justify-content: space-between;
-}
-.right-app .container .data .data-item{
-    padding: 25px 0px;
-    width: 22%;
-    border-radius: 20px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.table-action{
-    display: flex;
-    flex-direction: column;
-}
-.actif{
-    background: #08cf2a;
-    padding: 3px 25px;
-    border-radius: 10px;
-    color: #fff;
-}
-.non-actif{
-    background: #ca0707;
-    padding: 3px 25px;
-    border-radius: 10px;
-    color: #fff;
-}
+
+/* login */
 .login{
     position: absolute;
     top: 50%;
@@ -283,6 +235,7 @@ td{
     transform: translate(-50%, -50%);
     width: 35%;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(182, 181, 181);
 }
 .login-banque,
 .login-form{
@@ -312,16 +265,4 @@ td{
 }
 .error-message{
     padding: 10px 20px;
-}
-.add{
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px 0px;
-    border-radius: 20px;
-}
-.operation{
-    display: flex;
-}
-.operation .add{
-    margin-right: 20px;
 }

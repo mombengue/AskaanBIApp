@@ -2,7 +2,7 @@
 /**
  *
  */
-class DashboardController
+class AgenceController
 {
 
   public static function index($idUser) {
@@ -11,6 +11,8 @@ class DashboardController
     $user = $userManager->getUser($idUser);
     $role = new RoleManager();
     $roleUser = $role->getUserRole($idUser);
-    require(VIEW.'app/dashboard/dashboardView.php');
+    $agenceManager = new AgenceManager();
+    $agences = $agenceManager->getAgences();
+    require(VIEW.'app/agence/agenceView.php');
   }
 }

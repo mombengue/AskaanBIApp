@@ -1,4 +1,4 @@
-<?php $title = "Tableau de bord Askaan Bi"; ?>
+<?php $title = "Liste des agences Askaan Bii"; ?>
 
 <?php ob_start(); ?>
 
@@ -31,10 +31,10 @@
         </div>
         <div class="left-app bg-bleu-fonce">
             <ul>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="index.php?action=dashboard">Tableau de bord</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="index.php?action=agences">Agences</a>
                 </li>
                 <li class="nav-item">
@@ -50,24 +50,35 @@
         </div>
         <div class="right-app">
             <div class="container">
-                <h2 class="mb-50"><a href="" class="noir">Tableau de bord</a></h2>
-                <div class="data">
-                    <div class="data-item">
-                        <h2 class="mb-25 noir">2000</h2>
-                        <span class="">Administrateur</span>
+                <h2 class="mb-50"><a href="" class="noir">Agences</a></h2>
+                <div class="data-users">
+                    <div class="mb-50">
+                        <a href="" class="btn bg-bleu-fonce blanc">Ajouter</a>
                     </div>
-                    <div class="data-item">
-                        <h2 class="mb-25 noir">2000</h2>
-                        <span class="">Agence</span>
-                    </div>
-                    <div class="data-item">
-                        <h2 class="mb-25 noir">2000</h2>
-                        <span class="">Agent</span>
-                    </div>
-                    <div class="data-item">
-                        <h2 class="mb-25 noir">2000</h2>
-                        <span class="">Client</span>
-                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 5%;">#</th>
+                                <th style="width: 20%;">Nom Agence</th>
+                                <th style="width: 15%;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($agences as $agence) { ?>
+                                <tr>
+                                    <td><?= $agence->idAgence(); ?></td>
+                                    <td><?= $agence->nom(); ?></td>
+                                    <td>
+                                        <div class="table-action">
+                                            <a href="" class="bleu-fonce mb-10">Voire</a>
+                                            <a href="" class="orange mb-10">Editer</a>
+                                            <a href="" class="rouge mb-10">Supprimer</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
